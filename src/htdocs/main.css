@@ -1,0 +1,22 @@
+.status-connected {
+	color: lime;
+	font-weight: bold;
+}
+
+.status-disconnected {
+	color: red;
+	font-weight: bold;
+}
+
+.you {
+	color: blue;
+}
+
+.others {
+	color: green;
+}
+
+.left-pane {
+	height: 400px;
+	overflow: auto;
+}

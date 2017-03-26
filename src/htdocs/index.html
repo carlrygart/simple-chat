@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Chat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+<h1>Simple chat</h1>
+<p>A simple chat based on WebSockets</p>
+</div>
+
+<div class="container">
+    <div class="row">
+    <div class="col-sm-9">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#main-chat">Main Chat</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="main-chat" class="tab-pane fade in active left-pane"><p></p></div>
+        </div>
+        <div class="row">
+            <div class="input-group">
+                <input type="text" class="form-control" id="text-message-input" placeholder="Message">
+                <div class="input-group-btn">
+                    <button class="btn btn-default btn-primary" id="send">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="panel panel-default panel-primary">
+            <div class="panel-heading">Online Users</div>
+            <div class="panel-body">
+                <div id="user-list"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
